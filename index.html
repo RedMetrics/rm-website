@@ -16,44 +16,78 @@
         .firstsec {
             background-color: #F5F7FA;
         }
+
+        .footerlink {
+            line-height: 15px;
+            padding-bottom: 13px;
+        }
+
+        .footerlink>a {
+            font-size: 12px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .buttons {
+            background-color: #D60000 !important;
+            /* border: 1px solid #ff83a8 !important; */
+            color: #fff !important;
+            border-radius: 15px !important;
+            padding: 8px 35px !important;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buttons:hover {
+            background-color: #cc013f !important;
+        }
+        .mobiledisp {
+			display: none;
+		}
     </style>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://cdn.salesconnection.my/pages/image/graphic/sales-conn-logo.webp" alt=""
-                        height="60" width="260" class="d-inline-block aline-text-top">
-                </a>
+        <div class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid" style="padding-left:10px;margin: 5px 0px 5px">
+                <div class="col-xs-12 col-md-2">
+					<div class="pull-left" >
+						<div>
+							<a href="/"><img src="./image/REDMetrics_ logo.png" alt="Red Metrics" title="Red Metrics" height="60" width="260"  /></a>
+						</div>
+					</div>
+				</div>
                 <!--NAV bar-->
-                <div class="collapse navbar-collapse" id="navbarmenu">
-                    <ul class="navbar-nav mb-lg-0">
+                <div class="col-6">
+                    <ul class="navbar-nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                            <a class="nav-link active" href="#">About Us</a>
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex justify-content-end"></div>
-                <a href=# class="btn btn-primary me-2">Contact Us-></a>
+                <div class="d-flex justify-content-end "></div>
+                <a href=# class="buttons me-2 d-none d-sm-block">Contact Us-></a>
             </div>
-        </nav>
+        </div>
     </header>
 
 
-    <section class="d-none d-lg-block ptb-90  " style="background-color: #F5F7FA;">
-        <div class="container" style="margin-bottom: 20px;">
+    <section class=" ptb-90 firstsec">
+        <div class="container-fluid" style="margin-bottom: 10px;">
             <div class="row justify-content-center">
                 <div class="col-lg-7 d-flex">
                     <div class="d-flex justify-content-center flex-column">
-                        <h1 id="overview" class="new-main-header">Your Trusted B2B Digital Marketing Partner</h1>
-                        <div>
-                            <a class="btn btn-danger" data-bs-toggle="" data-bs-target="#">Get Started</a>
+                        <h1>Your Trusted B2B Digital Marketing Partner</h1>
+                        <div class="">
+                            <a class="buttons" role="button">Contact Us -></a>
                         </div>
                     </div>
                 </div>
@@ -71,38 +105,168 @@
         </div>
     </section>
 
-    <section class="ptb-90">
-        <div id="indutry-leader-section" class="container-fluid">
-            <div class="row d-flex">
+    <section class="ptb-90 " >
+        <div class="container-fluid">
+            <div class="row d-flex mb-2">
                 <div class="col-lg-12">
                     <div style="text-align: center;">
                         <h2>Our Clients</h2>
                         <p>We have been working with some Fortune 500+ clients</p>
                     </div>
-                    <!--Desktop-->
                     <div class="container-fluid">
-                        <div class="row pb-1 industry-leader justify-content-center">
-                            <div class="col-4 col-sm-2 col-md-2 col-lg-1">
-                                <div class="item">
-                                    <img loading="lazy" class="img img-fluid industry-img" alt="Black Canyon"
-                                        title="Black Canyon"
-                                        data-src="https://cdn.salesconnection.my/pages/image/industry/company-logo/black-canyon.webp"
-                                        src="https://cdn.salesconnection.my/pages/image/industry/company-logo/black-canyon.webp"
-                                        height="40" width="80">
-                                </div>
+                        <div class="row pb-1 justify-content-center mt-4 mb-4">
+                            <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+                                <img loading="lazy" class="img-fluid" alt="Edge Prop" title="Edge Prop"
+                                    data-src="./image/Edge_Prop_logo.png"
+                                    src="./image/Edge_Prop_logo.png"
+                                    height="40" width="160">
                             </div>
-                            <div class="col-4 col-sm-2 col-md-2 col-lg-1">
-                                <div class="item">
-                                    <img loading="lazy" class="img img-fluid industry-img" alt="Rotiboy" title="Rotiboy"
-                                        data-src="https://cdn.salesconnection.my/pages/image/industry/company-logo/rotiboy140.webp"
-                                        src="https://cdn.salesconnection.my/pages/image/industry/company-logo/rotiboy140.webp"
-                                        height="40" width="120">
-                                </div>
+                            <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+                                <img loading="lazy" class="img-fluid" alt="Cation" title="Cation"
+                                    data-src="./image/Cation_logo.png"
+                                    src="./image/Cation_logo.png"
+                                    height="90" width="170">
                             </div>
+                            <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+                                <img loading="lazy"class="img-fluid"  alt="DKSH" title="DKSH"
+                                    data-src="./image/DKSH_logo_red.png"
+                                    src="./image/DKSH_logo.png"
+                                    height="110" width="120">
+                            </div>
+                            <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+                                <img loading="lazy" class="img-fluid" alt="Good Institute" title="Good Institute"
+                                    data-src="./image/Good_Institute_logo.jpg"
+                                    src="./image/Good_Institute_logo.jpg"
+                                    height="50" width="150">
+                            </div>
+                            <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+                                <img loading="lazy" class="img-fluid"  alt="Tech Technical Service" title="Tech Technical Service"
+                                    data-src="./image/Tech_Technical_Service.webp"
+                                    src="./image/Tech_Technical_ Service.webp"
+                                    height="" width="200">
+                            </div>
+                            <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+                                <img loading="lazy" class="img-fluid"  alt="Swim Up Academy" title="Swim Up Academy"
+                                    data-src="./image/Swim_Up_Academy_logo.png"
+                                    src="./image/Swim_Up_Academy_logo.png"
+                                    height="40" width="80">
+                            </div>
+
+                            
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="ptb-90 pb-0">
+        <div class="container-fluid">
+            <div class="text-center mb-2">
+                <h2>Our Suite of Services</h2>
+            </div>
+            <div class="row justify-content-center mt-4 mb-4" style="text-align: -webkit-center;">
+                <div class="col-lg-3 align-content-start">
+                    <div><img loading="lazy" class="img img-fluid " alt="Red Metrics’ “Second List”" title="Red Metrics’ “Second List”"
+                            data-src="./image/Second_Leads.gif"
+                            src="./image/Second_Leads.gif"
+                            height="40" width="120">
+                    </div>
+                    <div class="py-3">
+                        <h4>Red Metrics’ “Second List”</h4>
+                        <p>Get company names that visited your website. Reach out to users who visited important pages
+                            on your website</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 align-content-start">
+                    <div><img loading="lazy" class="img img-fluid " alt="Google Ads" title="Google Ads"
+                            data-src="./image/Google_Ads.png"
+                            src="./image/Google_Ads.png"
+                            height="40" width="120">
+                    </div>
+                    <div class="py-3">
+                        <h4>Google Ads</h4>
+                        <p>Optimize your ad to show up on Google Search, websites, YouTube</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 align-content-start">
+                    <div><img loading="lazy" class="img img-fluid " alt="Google SEO" title="Google Seo"
+                            data-src="./image/Google_SEO.gif"
+                            src="./image/Google_SEO.gif"
+                            height="40" width="120">
+                    </div>
+                    <div class="py-3">
+                        <h4>Google SEO</h4>
+                        <p>Optimize your website to appear organically for important keywords </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 align-content-start">
+                    <div><img loading="lazy" class="img img-fluid" alt="Social Media Ads" title="Social Media Ads"
+                            data-src="./image/Social_Media_Ads.gif"
+                            src="./image/Social_Media_Ads.gif"
+                            height="40" width="120"></div>
+                    <div class="py-3">
+                        <h4>Social Media Ads</h4>
+                        <p>Showcase your products on Facebook, Instagram, LinkedIn </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 align-content-start">
+                    <div><img loading="lazy" class="img img-fluid " alt="Social Media Management" title="Social Media Management"
+                            data-src="./image/Social_Media_Management.png"
+                            src="./image/Social_Media_Management.png"
+                            height="40" width="120"></div>
+                    <div class="py-3">
+                        <h4>Social Media Management</h4>
+                        <p>Plan and create your content for your social media pages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ptb-90 py-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 px-0 py-0">
+                    <div class="d-none d-lg-block d-flex justify-content-center align-items-center me-2">
+                        <img class="img img-fluid"
+                            src="https://cdn.salesconnection.my/pages/image/graphic/field-service/ver2/prioritize-field-service.webp"
+                            alt="Prioritize asset management" title="Prioritize asset management"
+                            style="max-width: 100%; width: max-content;" />
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div>
+                        <h2 class="">The Red Metrics “Second List”</h2>
+                        <div class="py-2">
+                            <p>
+                                Get info on who your visitors are - even if they did not submit an enquiry to you
+
+                            </p>
+                            <p>
+                                We’ll help you filter relevant leads and create a script for you to follow along in your
+                                call
+                            </p>
+                        </div>
+                        <div class="d-none d-lg-block py-4">
+                            <a class="buttons" href="#">
+                                Get Started Here
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-lg-none hero-area-content mainTopBan d-flex justify-content-center align-items-center">
+            <img class="img img-fluid"
+                src="https://cdn.salesconnection.my/pages/image/graphic/field-service/ver2/prioritize-field-service-ori.webp"
+                alt="Prioritize asset management" title="Prioritize asset management"
+                style="max-width: 100%; width: max-content;" />
+        </div>
+        <div class="d-lg-none pt-4 text-center my-3">
+            <a class="buttons" href="#">
+                Get Started Here
+            </a>
         </div>
     </section>
 
@@ -111,6 +275,148 @@
 
 
 
+
+    <section class="ptb-90">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 mb-3 mt-4 d-flex ">
+                    <h4>Helping 14 countries thrive with digital marketing across 6 languages</h4>
+                </div>
+                <div class=" col-lg-4 d-flex justify-content-center">
+                    <div class="d-flex">
+                        <div class="col d-flex align-items-center">
+                            <img class="img-fluid" title="Job scheduling" alt="Job scheduling"
+                                src="./image/14 Countries.gif"
+                                width="50" height="50" />
+                            <div class="ps-3 my-4">
+                                <h5>14</h5>
+                                <p class="m-auto">Countries</p>
+                            </div>
+                        </div>
+                        <div class=" col d-flex align-items-center ">
+                            <img class="img-fluid " title="Assign team member" alt="Assign team member"
+                                src="./image/6 Language.gif"
+                                width="50" height="50" />
+                            <div class="ps-3 my-4">
+                                <h5>6</h5>
+                                <p class="m-auto">Languages supported</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="d-flex">
+                        <div class=" col d-flex align-items-center ">
+                            <img class="img-fluid" title="Control the workflow" alt="Control the workflow"
+                                src="./image/3_Major_Platforms.gif"
+                                width="50" height="50" />
+                            <div class="ps-3 my-4">
+                                <h5>3 Major Platforms</h5>
+                                <p class="m-auto">Google, Facebook, LinkedIn</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center ">
+                            <img class="img-fluid" title="Fast access" alt="Fast access"
+                                src="./image/Over_69x_returns.gif"
+                                width="50" height="50" />
+                            <div class="ps-3 my-4">
+                                <h5>Over 69x returns </h5>
+                                <p class="m-auto">Generated $69 for every $1 spent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ptb-90 firstsec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center ">
+                    <div class="pt-4 p-3">
+                        <h2>Ready to get started?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center my-3">
+                    <a class="buttons" href="#">Contact us here -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <a href="#">
+                            <img loading="lazy" class="lazy" id="sc-logo" alt="Sales Connection"
+                                title="Sales Connection" style="max-width:100%;height: auto;" width="165" height="70"
+                                data-src="https://cdn.salesconnection.my/pages/image/graphic/sales-conn-logo.webp"
+                                src="https://cdn.salesconnection.my/pages/image/graphic/sales-conn-logo.webp">
+                        </a>
+                        <div style="padding-right: 30px">
+                            <p style="margin: 0;font-size: 12px;">Subang Square, E-10-4, Jalan SS15/3B, Seksyen 15,
+                                47500 Subang Jaya, Selangor</p>
+                            <p style="margin: 0;font-size: 12px;">All Rights Reserved</p>
+                        </div>
+
+                        <div class="row" style="padding-right: 30px;">
+                            <div class="col-4">
+                                <a href="#"><img loading="lazy" class="lazy" alt="LinkedIn" title="" width="140"
+                                        height="45" data-src="#" style="cursor: pointer;"></a>
+
+
+                            </div>
+                            <div class="col-4">
+                                <a href="#"><img loading="lazy" class="lazy" alt="Facebook" title="" width="140"
+                                        height="45" data-src="#" style="cursor: pointer;"></a>
+                            </div>
+
+                            <div class="col-4">
+                                <a href="#"><img loading="lazy" class="lazy" alt="Instagram" title="" width="140"
+                                        height="45" data-src="#" style="cursor: pointer;"></a>
+                            </div>
+
+
+
+
+                        </div>
+                        <div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-5 col-sm-4 col-lg-3">
+                        <div>
+                            <h5> Company </h5>
+                        </div>
+                        <div class="footerlink">
+                            <a class="" href="#"> About Us </a>
+                        </div>
+                        <div class="footerlink">
+                            <a href="#"> Blog</a>
+                        </div>
+                        <div class="footerlink">
+                            <a href="#"> Contact Us </a>
+                        </div>
+                        <div class="footerlink">
+                            <a href="#"> Pricing</a>
+                        </div>
+                        <div class="footerlink">
+                            <a href="#"> Testimonials </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
