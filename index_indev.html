@@ -25,7 +25,17 @@
         .footerlink>a {
             font-size: 12px;
             text-decoration: none;
-            color: black;
+            color: white !important;
+        }
+
+        .footerlink>p {
+            font-size: 12px;
+            text-decoration: none;
+            color: white !important;
+        }
+
+        .footer {
+            color: white !important;
         }
 
         .buttons {
@@ -45,10 +55,6 @@
             background-color: #cc013f !important;
         }
 
-        .mobiledisp {
-            display: none;
-        }
-
         .fixed {
             position: fixed;
             bottom: 50px;
@@ -56,7 +62,7 @@
 
         }
 
-        .whatsappbutton {
+        /* .whatsappbutton {
             background-color: #07c21d !important;
             color: #fff !important;
             border-radius: 15px !important;
@@ -69,7 +75,7 @@
 
         .whatsappbutton:hover {
             background-color: #03a10b !important;
-        }
+        } */
     </style>
 
 </head>
@@ -87,7 +93,7 @@
                     </div>
                 </div>
                 <!--NAV bar-->
-                <div class="col-6">
+                <div class="col-6 d-none d-sm-block">
                     <ul class="navbar-nav justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Home</a>
@@ -101,6 +107,22 @@
                 <a href=# class="buttons me-2 d-none d-sm-block">Contact Us-></a>
             </div>
         </div>
+        <!--Mobile Nav View-->
+        <div class="navbar navbar-expand-lg navbar-light">
+            <div class="col-12 d-lg-none d-flex justify-content-center">
+                <ul class="col-2 navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                </ul>
+                <ul class="col-2 navbar-nav">                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </header>
 
 
@@ -110,25 +132,30 @@
                 <div class="col-lg-7 d-flex">
                     <div class="d-flex justify-content-center flex-column">
                         <h1>Your Trusted B2B Digital Marketing Partner</h1>
-                        <div class="">
+                        <div class="d-none d-sm-block">
                             <a class="buttons" role="button">Contact Us -></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 justify-content-end align-items-center" style="display: flex;">
-                    <img class="img lazy"
-                        title="Easily manage your service team through our Maintenance Management Software"
-                        alt="Easily manage your service team through our Maintenance Management Software"
+                    <img class="img lazy" title="Your Trusted B2B Digital Marketing Partner"
+                        alt="Your Trusted B2B Digital Marketing Partner"
                         src="https://cdn.salesconnection.my/pages/image/graphic/header.webp"
                         data-src="https://cdn.salesconnection.my/pages/image/graphic/header.webp" width="470"
                         height="470" style='max-width: 100%;width: fit-content;' />
                 </div>
             </div>
+            <div class="d-lg-none col-lg-12 d-flex justify-content-center my-3">
+                <a class="buttons " role="button">Contact Us -></a>
+            </div>
         </div>
     </section>
 
     <div class="fixed">
-        <a class="whatsappbutton" href="#">WhatsApp</a>
+        <a href="#">
+            <img loading="lazy" class="img-fluid" data-src="./image/Whatsapp_logo.png" src="./image/Whatsapp_logo.png"
+                height="40" width="70">
+        </a>
     </div>
 
     <section class="ptb-90 ">
@@ -171,8 +198,6 @@
                                     data-src="./image/Swim_Up_Academy_logo.png" src="./image/Swim_Up_Academy_logo.png"
                                     height="40" width="80">
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -244,7 +269,7 @@
                     <div class="d-none d-lg-block d-flex justify-content-center align-items-center me-2">
                         <img class="img img-fluid"
                             src="https://cdn.salesconnection.my/pages/image/graphic/field-service/ver2/prioritize-field-service.webp"
-                            alt="Prioritize asset management" title="Prioritize asset management"
+                            alt="The Red Metrics “Second List”" title="The Red Metrics “Second List”"
                             style="max-width: 100%; width: max-content;" />
                     </div>
                 </div>
@@ -261,7 +286,7 @@
                                 call
                             </p>
                         </div>
-                        <div class="d-none d-lg-block py-4">
+                        <div class="d-none d-lg-block py-2">
                             <a class="buttons" href="#">
                                 Get Started Here
                             </a>
@@ -270,10 +295,11 @@
                 </div>
             </div>
         </div>
+        <!-- Second List Mobile View -->
         <div class="d-lg-none hero-area-content mainTopBan d-flex justify-content-center align-items-center">
             <img class="img img-fluid"
                 src="https://cdn.salesconnection.my/pages/image/graphic/field-service/ver2/prioritize-field-service-ori.webp"
-                alt="Prioritize asset management" title="Prioritize asset management"
+                alt="The Red Metrics “Second List”" title="The Red Metrics “Second List”"
                 style="max-width: 100%; width: max-content;" />
         </div>
         <div class="d-lg-none pt-4 text-center my-3">
@@ -283,22 +309,16 @@
         </div>
     </section>
 
-
-
-
-
-
-
     <section class="ptb-90">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 mb-3 mt-4 d-flex ">
-                    <h4>Helping 14 countries thrive with digital marketing across 6 languages</h4>
+                    <h3>Helping 14 countries thrive with digital marketing across 6 languages</h3>
                 </div>
                 <div class=" col-lg-4 d-flex justify-content-center">
                     <div class="d-flex">
                         <div class="col d-flex align-items-center">
-                            <img class="img-fluid" title="Job scheduling" alt="Job scheduling"
+                            <img class="img-fluid" title="14 Countries" alt="14 Countries"
                                 src="./image/14 Countries.gif" width="50" height="50" />
                             <div class="ps-3 my-4">
                                 <h5>14</h5>
@@ -306,7 +326,7 @@
                             </div>
                         </div>
                         <div class=" col d-flex align-items-center ">
-                            <img class="img-fluid " title="Assign team member" alt="Assign team member"
+                            <img class="img-fluid " title="6 Languages supported" alt="6 Languages supported"
                                 src="./image/6 Language.gif" width="50" height="50" />
                             <div class="ps-3 my-4">
                                 <h5>6</h5>
@@ -318,7 +338,7 @@
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="d-flex">
                         <div class=" col d-flex align-items-center ">
-                            <img class="img-fluid" title="Control the workflow" alt="Control the workflow"
+                            <img class="img-fluid" title="3 Major Platforms" alt="3 Major Platforms"
                                 src="./image/3_Major_Platforms.gif" width="50" height="50" />
                             <div class="ps-3 my-4">
                                 <h5>3 Major Platforms</h5>
@@ -326,7 +346,7 @@
                             </div>
                         </div>
                         <div class="col d-flex align-items-center ">
-                            <img class="img-fluid" title="Fast access" alt="Fast access"
+                            <img class="img-fluid" title="Over 69x returns" alt="Over 69x returns"
                                 src="./image/Over_69x_returns.gif" width="50" height="50" />
                             <div class="ps-3 my-4">
                                 <h5>Over 69x returns </h5>
@@ -343,8 +363,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center ">
-                    <div class="pt-4 p-3">
-                        <h2>Ready to get started?</h2>
+                    <div class="pt-4 p-2">
+                        <h1>Ready to get started?</h1>
                     </div>
                 </div>
             </div>
@@ -358,26 +378,24 @@
 
 
     <footer>
-        <section>
-            <div class="container">
+        <section class="footer">
+            <div class="container" style="background-color: #263238;">
                 <div class="row">
                     <div class="col-7">
                         <div class="my-3">
                             <a href="#">
                                 <img loading="lazy" class="lazy" alt="Red Metrics" title="Red Metrics"
-                                    style="max-width:100%;height: auto;" width="230px" height="40px" data-src=""
-                                    src="./image/REDMetrics_ logo.png">
+                                    style="max-width:100%;height: auto;" width="230px" height="40px"
+                                    data-src="./image/REDMetrics_ logo.png" src="./image/REDMetrics_ logo.png">
                             </a>
                         </div>
-                        
-                        <div style="padding-right: 30px">
-                            <p style="margin: 0;font-size: 12px;">Subang Square, E-10-4, Jalan SS15/3B, Seksyen 15,
+                        <div class="footerlink my-2">
+                            <p>Subang Square, E-10-4, Jalan SS15/3B, Seksyen 15,
                                 47500 Subang Jaya, Selangor</p>
-                            <p style="margin: 0;font-size: 12px;">All Rights Reserved</p>
+                            <p>All Rights Reserved</p>
                         </div>
-
-                        <div class="row" style="padding-right: 30px;">
-                            <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 my-2">
                                 <a href="https://www.linkedin.com/company/104144367/admin/dashboard/"><img
                                         loading="lazy" class="lazy" alt="LinkedIn" title="" width="50" height="45"
                                         data-src="./image/Linkedin_logo.png" src="./image/Linkedin_logo.png"
@@ -385,30 +403,18 @@
                                 <a href="#"><img loading="lazy" class="lazy" alt="Facebook" title="" width="50"
                                         height="45" data-src="#" src="./image/Facebook_logo.png"
                                         style="cursor: pointer;"></a>
-                                <a href="#"><img loading="lazy" class="lazy" alt="Instagram" title="" width="50"
-                                        height="45" data-src="#" src="./image/Instagram_logo.png"
-                                        style="cursor: pointer;"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-5 col-sm-4 col-lg-3">
-                        <div>
+                        <div class="my-3">
                             <h5> Company </h5>
                         </div>
                         <div class="footerlink">
-                            <a class="" href="#"> About Us </a>
+                            <a href="#"> About Us </a>
                         </div>
                         <div class="footerlink">
-                            <a href="#"> Blog</a>
-                        </div>
-                        <!-- <div class="footerlink">
                             <a href="#"> Contact Us </a>
-                        </div> -->
-                        <div class="footerlink">
-                            <a href="#"> Pricing</a>
-                        </div>
-                        <div class="footerlink">
-                            <a href="#"> Testimonials </a>
                         </div>
                     </div>
                 </div>
