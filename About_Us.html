@@ -12,6 +12,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <script>
+        function openwhatsapp(){
+            window.open("https://wa.me/60129114963")
+            }
+        
+        function openlinkedin(){
+            window.open("https://www.linkedin.com/company/104144367/admin/dashboard/")
+        }
+
+        function openfacebook(){
+            window.open("")
+        }
+    </script>
+
     <style>
         .address {
             line-height: 13px;
@@ -83,7 +97,7 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end "></div>
-                <a href=# class="buttons me-2 d-none d-sm-block">Contact Us</a>
+                <a type="button" value="Open Whatsapp" onclick="openwhatsapp()" class="buttons me-2 d-none d-sm-block">Contact Us</a>
             </div>
         </div>
         <!--Mobile Nav View-->
@@ -167,11 +181,12 @@
                         </div>
                         <div class="row">
                             <div class="col-12 my-3">
-                                <a href="https://www.linkedin.com/company/104144367/admin/dashboard/"><img
+                                <a type="button" value="Open LinkedIn" onclick="openlinkedin()"><img
                                         loading="lazy" class="lazy" alt="LinkedIn" title="" width="50" height="45"
                                         data-src="./image/Linkedin_logo.png" src="./image/Linkedin_logo.png"
                                         style="cursor: pointer;"></a>
-                                <a href="#"><img loading="lazy" class="lazy" alt="Facebook" title="" width="50"
+                                <a type="button" value="Open Facebook" onclick="openfacebook()"><img 
+                                        loading="lazy" class="lazy" alt="Facebook" title="" width="50" height
                                         height="45" data-src="#" src="./image/Facebook_logo.png"
                                         style="cursor: pointer;"></a>
                             </div>
@@ -185,7 +200,7 @@
                             <a href="About_Us.html"> About Us </a>
                         </div>
                         <div class="footerlink">
-                            <a href="#"> Contact Us </a>
+                            <a type="button" value="Open Whatsapp" onclick="openwhatsapp()"> Contact Us </a>
                         </div>
                     </div>
                 </div>

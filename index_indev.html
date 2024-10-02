@@ -16,6 +16,14 @@
         function openwhatsapp(){
             window.open("https://wa.me/60129114963")
         }
+
+        function openlinkedin(){
+            window.open("https://www.linkedin.com/company/104144367/admin/dashboard/")
+        }
+
+        function openfacebook(){
+            window.open("")
+        }
     </script>
 
     <style>
@@ -114,7 +122,7 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end "></div>
-                <a href=# class="buttons me-2 d-none d-sm-block">Contact Us</a>
+                <a type="button" value="Open Whatsapp" onclick="openwhatsapp()" class="buttons me-2 d-none d-sm-block">Contact Us</a>
             </div>
         </div>
         <!--Mobile Nav View-->
@@ -143,7 +151,7 @@
                     <div class="d-flex justify-content-center flex-column">
                         <h1>Your Trusted B2B Digital Marketing Partner</h1>
                         <div class="d-none d-sm-block">
-                            <a class="buttons" role="button">Contact Us</a>
+                            <a type="button" value="Open Whatsapp" onclick="openwhatsapp()" class="buttons" role="button">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +164,7 @@
                 </div>
             </div>
             <div class="d-lg-none col-lg-12 d-flex justify-content-center my-3">
-                <a class="buttons " role="button">Contact Us</a>
+                <a type="button" value="Open Whatsapp" onclick="openwhatsapp()" class="buttons">Contact Us</a>
             </div>
         </div>
     </section>
@@ -370,7 +378,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center my-3">
-                    <a class="buttons" href="#">Contact us here -></a>
+                    <a class="buttons" type="button" value="Open Whatsapp" onclick="openwhatsapp()">Contact us here</a>
                 </div>
             </div>
         </div>
@@ -396,11 +404,12 @@
                         </div>
                         <div class="row">
                             <div class="col-12 my-2">
-                                <a href="https://www.linkedin.com/company/104144367/admin/dashboard/"><img
+                                <a type="button" value="Open LinkedIn" onclick="openlinkedin()"><img
                                         loading="lazy" class="lazy" alt="LinkedIn" title="" width="50" height="45"
                                         data-src="./image/Linkedin_logo.png" src="./image/Linkedin_logo.png"
                                         style="cursor: pointer;"></a>
-                                <a href="#"><img loading="lazy" class="lazy" alt="Facebook" title="" width="50"
+                                <a type="button" value="Open Facebook" onclick="openfacebook()"><img 
+                                        loading="lazy" class="lazy" alt="Facebook" title="" width="50"
                                         height="45" data-src="#" src="./image/Facebook_logo.png"
                                         style="cursor: pointer;"></a>
                             </div>
@@ -414,7 +423,7 @@
                             <a href="About_Us.html"> About Us </a>
                         </div>
                         <div class="footerlink">
-                            <a href="#"> Contact Us </a>
+                            <a type="button" value="Open Whatsapp" onclick="openwhatsapp()"> Contact Us </a>
                         </div>
                     </div>
                 </div>
