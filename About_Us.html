@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-K5N93WBX');
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K5N93WBX');
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
@@ -20,15 +23,15 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script>
-        function openwhatsapp(){
+        function openwhatsapp() {
             window.open("https://wa.link/c3iprd")
-            }
-        
-        function openlinkedin(){
+        }
+
+        function openlinkedin() {
             window.open("https://www.linkedin.com/company/104144367/admin/dashboard/")
         }
 
-        function openfacebook(){
+        function openfacebook() {
             window.open("https://www.facebook.com/profile.php?id=61566499351197")
         }
     </script>
@@ -45,7 +48,8 @@
 
         }
 
-        html, body{
+        html,
+        body {
             overflow-x: hidden;
             overflow-y: scroll;
         }
@@ -63,6 +67,17 @@
 
         .footer {
             color: white !important;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footermob {
+            color: white !important;
+            left: 0;
+            bottom: 0;
+            width: 100%;
         }
 
         .buttons {
@@ -82,14 +97,14 @@
             background-color: #cc013f !important;
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="./image/RedMetrics_favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="./image/RedMetrics_favicon.png" />
 
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5N93WBX"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5N93WBX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="navbar navbar-expand-lg navbar-light">
@@ -106,7 +121,7 @@
                 <div class="col-6 d-none d-lg-block">
                     <ul class="navbar-nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/">Home </a> 
+                            <a class="nav-link active" href="/">Home </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" style="color: #D60000;">|</a>
@@ -117,7 +132,8 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end "></div>
-                <a type="button" value="Open Whatsapp" onclick="openwhatsapp()" class="buttons me-2 d-none d-sm-block">Contact Us</a>
+                <a type="button" value="Open Whatsapp" onclick="openwhatsapp()"
+                    class="buttons me-2 d-none d-sm-block">Contact Us</a>
             </div>
         </div>
         <!--Mobile Nav View-->
@@ -143,52 +159,59 @@
 
     </header>
     <!--Lady Picture-->
-    <section class=" ptb-90 ">
-        <div class="container-fluid" style="margin-bottom: 10px;">
-            <div class="row justify-content-center">
-                <div class="col-md-5 justify-content-center align-items-center" style="display: flex;">
-                    <img class="img lazy" src="./image/about_us.png" data-src="./image/about_us.png" height="350"
-                        style='max-width: 100%;width: fit-content;' />
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--About Us Section-->
     <section class="ptb-90">
-        <div class="container-fluid">
-            <div class="row d-flex mb-2">
-                <div style="text-align: start;">
-                    <h1>About Us</h1>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="list-group list-group-numbered">
-                    <div class=" d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto ">
-                            <div style="font-size: 30px; font-weight:500;">1. Who are Red Metrics Solutions?</div>
-                            <ol>
-                                <li class="my-3" style="font-size: 20px;">We are <span
-                                        style="color: #D60000; font-weight: 700; font-size: 25px;">B2B</span> marketers
-                                    with a vision to help spread the knowledge of digital marketing
-                                    to fellow B2B players around the world.</li>
-                            </ol>
+        <div class="container-fluid" style="margin-bottom: 10px;">
+            <div class="row">
+                <div class="col-lg-6 d-flex">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column p-3">
+                            <div class="d-lg-none col-lg-7 justify-content-center d-flex align-items-center">
+                                <img class="img-lazy" src="./image/about_us.png" data-src="./image/about_us.png"
+                                    height="250px" style="max-width: 100%; width: max-content;" />
+                            </div>
+                            <h1 style="padding: 5px;">About Us</h1>
+                            <div class="list-group list-group-numbered">
+                                <div class=" d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto p-3 ">
+                                        <div style="font-size: 30px; font-weight:500;">1. Who are Red Metrics Solutions?
+                                        </div>
+                                        <ol>
+                                            <li class="my-3" style="font-size: 20px;">We are <span
+                                                    style="color: #D60000; font-weight: 700; font-size: 25px;">B2B</span>
+                                                marketers
+                                                with a vision to help spread the knowledge of digital marketing
+                                                to fellow B2B players around the world.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto p-3">
+                                        <div style="font-size: 30px; font-weight: 500;">2. Do you also help B2C
+                                            businesses?</div>
+                                        <ol>
+                                            <li class="my-3" style="font-size: 20px;">Yes we do! Feel free to reach out
+                                                to us.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div style="font-size: 30px; font-weight: 500;">2. Do you also help B2C businesses?</div>
-                            <ol>
-                                <li class="my-3" style="font-size: 20px;">Yes we do! Feel free to reach out to us.</li>
-                            </ol>
-                        </div>
-                    </div>
                 </div>
+                <div class="d-none d-lg-block col-6 justify-content-center d-flex align-items-center">
+                    <img class="img-lazy" src="./image/about_us.png" data-src="./image/about_us.png" height="350px"
+                        style="max-width: 100%; width: max-content;" />
+                </div>
+
             </div>
         </div>
+        </div>
     </section>
+
     <!--Footer-->
     <footer>
-        <section class="footer">
+        <section class="footer d-none d-lg-block">
             <div class="container-fluid" style="background-color: #263238;">
                 <div class="row">
                     <div class="col-7">
@@ -206,14 +229,56 @@
                         </div>
                         <div class="row">
                             <div class="col-12 my-3">
-                                <a type="button" value="Open LinkedIn" onclick="openlinkedin()"><img
-                                        loading="lazy" class="lazy" alt="LinkedIn" title="" width="50" height="45"
+                                <a type="button" value="Open LinkedIn" onclick="openlinkedin()"><img loading="lazy"
+                                        class="lazy" alt="LinkedIn" title="" width="50" height="45"
                                         data-src="./image/Linkedin_logo.png" src="./image/Linkedin_logo.png"
                                         style="cursor: pointer;"></a>
-                                <a type="button" value="Open Facebook" onclick="openfacebook()"><img 
-                                        loading="lazy" class="lazy" alt="Facebook" title="" width="50" height
-                                        height="45" data-src="#" src="./image/Facebook_logo.png"
+                                <a type="button" value="Open Facebook" onclick="openfacebook()"><img loading="lazy"
+                                        class="lazy" alt="Facebook" title="" width="50" height height="45" data-src="#"
+                                        src="./image/Facebook_logo.png" style="cursor: pointer;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-4 col-lg-3">
+                        <div class="my-3">
+                            <h5> Company </h5>
+                        </div>
+                        <div class="footerlink">
+                            <a href="About_Us.html"> About Us </a>
+                        </div>
+                        <div class="footerlink">
+                            <a type="button" value="Open Whatsapp" onclick="openwhatsapp()"> Contact Us </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Mobile Footer-->
+        <section class="footermob d-lg-none">
+            <div class="container-fluid" style="background-color: #263238;">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="my-3">
+                            <a href="/">
+                                <img loading="lazy" class="lazy" alt="Red Metrics" title="Red Metrics"
+                                    style="max-width:100%;height: auto;" width="230px" height="40px"
+                                    data-src="./image/REDMetrics_ logo.png" src="./image/REDMetrics_logo(2).png">
+                            </a>
+                        </div>
+                        <div class="address">
+                            <p>Subang Square, E-10-4, Jalan SS15/3B, Seksyen 15,
+                                47500 Subang Jaya, Selangor</p>
+                            <p>All Rights Reserved</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 my-3">
+                                <a type="button" value="Open LinkedIn" onclick="openlinkedin()"><img loading="lazy"
+                                        class="lazy" alt="LinkedIn" title="" width="50" height="45"
+                                        data-src="./image/Linkedin_logo.png" src="./image/Linkedin_logo.png"
                                         style="cursor: pointer;"></a>
+                                <a type="button" value="Open Facebook" onclick="openfacebook()"><img loading="lazy"
+                                        class="lazy" alt="Facebook" title="" width="50" height height="45" data-src="#"
+                                        src="./image/Facebook_logo.png" style="cursor: pointer;"></a>
                             </div>
                         </div>
                     </div>
